@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <title>Useful Info Joan Ribera Sirvent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Exam2">
+    <meta name="keywords" content="Exam2,Joan">
+    <meta name="author" content="Joan Ribera">
+    <link rel="stylesheet" href="css/W3.css">
+    <link rel="stylesheet" href="css/common_style.css">
+</head>
+<body class="bodyclass">
+    <!--Menu-->
+    <nav>
+        <ul class="menu_movil menu_drop">
+            <li>
+                <a href="#menu" class="size_icon">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <ul>
+                    <li class="col-3 col-s-3"><a href="indexJoanRibera.html">Home</a></li>
+                    <li class="col-3 col-s-3"><a href="gallery.html">Gallery</a></li>
+                    <li class="col-3 col-s-3"><a href="TierList.html">Tier List</a></li>
+                    <li class="col-3 col-s-3"><a href="UsefulWebpages.html">Useful Info</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="menu_pc menu_drop">
+            <li class="col-3 col-s-3"><a href="indexJoanRibera.html">Home</a></li>
+            <li class="col-3 col-s-3"><a href="gallery.html">Gallery</a></li>
+            <li class="col-3 col-s-3"><a href="TierList.html">Tier List</a></li>
+            <li class="col-3 col-s-3"><a href="UsefulWebpages.html">Useful Info</a></li>
+        </ul>
+    </nav>
+    <!--End of Menu-->
+    <h1 id="c3">Useful webpages to help you build your own custom PC:</h1>
+    <ol id="list1">
+        <li>PC Componentes:
+            <ol>
+                <li><a href="https://www.pccomponentes.com">Main Page</a></li>
+                <li><a href="https://www.pccomponentes.com/configurador">Customizate it</a></li>
+            </ol>
+        </li>
+        <li><a href="https://www.pcspecialist.es">PC Specialist</a></li>
+        <li><a href="https://nzxt.com/es-ES/category/gaming-pcs/build">NZXT</a></li>
+    </ol>
+
+    <h2> Useful Info:</h2>
+    <div id="xmlContent"></div>
+    
+    <script>
+        // Create an XMLHttpRequest object
+        var xhttp = new XMLHttpRequest();
+    
+        // Define the callback function
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            // Parse the XML response
+            var xmlDoc = this.responseXML;
+    
+            // Extract the data from the XML and display it
+            var title = xmlDoc.getElementsByTagName("title")[0].textContent;
+            var description = xmlDoc.getElementsByTagName("description")[0].textContent;
+            var cpuName = xmlDoc.getElementsByTagName("name")[0].textContent;
+            var cpuDescription = xmlDoc.getElementsByTagName("description")[1].textContent;
+            var gpuName = xmlDoc.getElementsByTagName("name")[1].textContent;
+            var gpuDescription = xmlDoc.getElementsByTagName("description")[3].textContent;
+    
+            var output = "<h2>" + title + "</h2>";
+            output += "<p>" + description + "</p>";
+            output += "<h3>" + cpuName + "</h3>";
+            output += "<p>" + cpuDescription + "</p>";
+            output += "<h3>" + gpuName + "</h3>";
+            output += "<p>" + gpuDescription + "</p>";
+    
+            // Display the XML content
+            document.getElementById("xmlContent").innerHTML = output;
+          }
+        };
+    
+        // Load the XML file
+        xhttp.open("GET", "cpus_gpus.xml", true);
+        xhttp.send();
+      </script>
+<a class="colortext" href="#c3">Go Up Again</a>
+
+    <footer class="grey col-12 col-s-12 iframe">
+        <p> Made by Joan Ribera Sirvent at IES Serpis</p>
+        <div class="container">
+            <div class="col-6 col-s-6">
+                <div class="col-12 col-s-12">
+                    <div>
+                        <iframe class="col-3 col-s-3" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.34010410308837896%2C39.471205939871076%2C-0.338280200958252%2C39.47598866639999&amp;layer=mapnik" style="border: 1px solid black">
+                        </iframe>
+                        <br>
+                        <a href="https://www.openstreetmap.org/#map=18/39.47360/-0.33919">
+                            See IES Serpis
+                        </a>
+                        </div>
+                        </div>
+                        </div>
+                        
+                        <aside class="col-6 col-s-6">
+                            <img class="image" src="imagesJoan/footer.png" alt="footer image">
+                        </aside>
+                        </div>
+                        
+                        </footer>
+                        </body>
+                        </html>
+                        

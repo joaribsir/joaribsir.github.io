@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic>
+  <title>CPU and GPU</title>
+  <description>Central Processing Units (CPUs) and Graphics Processing Units (GPUs) are essential components of modern computers.</description>
+  <components>
+    <component>
+      <name>CPU</name>
+      <description>The CPU is the brain of the computer, responsible for executing instructions and performing calculations.</description>
+    </component>
+    <component>
+      <name>GPU</name>
+      <description>The GPU is specialized for handling graphics-related tasks, such as rendering images and videos.</description>
+    </component>
+  </components>
+  <importance>
+    <point>CPU: The CPU plays a crucial role in overall system performance and determines how quickly tasks are executed.</point>
+    <point>GPU: The GPU is vital for gaming, video editing, and other graphics-intensive applications, as it offloads the processing workload from the CPU.</point>
+  </importance>
+  <advancements>
+    <advancement>
+      <title>Multi-core CPUs</title>
+      <description>Modern CPUs often feature multiple cores, allowing for parallel processing and improved multitasking capabilities.</description>
+    </advancement>
+    <advancement>
+      <title>High-performance GPUs</title>
+      <description>GPUs have evolved to become highly powerful and specialized, with advanced features like ray tracing and deep learning acceleration.</description>
+    </advancement>
+  </advancements>
+</topic>
