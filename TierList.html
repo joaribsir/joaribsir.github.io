@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+  <title>Tier List Joan Ribera Sirvent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="Exam2">
+  <meta name="keywords" content="Exam2,Joan">
+  <meta name="author" content="Joan Ribera">
+  <link rel="stylesheet" href="css/W3.css">
+  <link rel="stylesheet" href="css/common_style.css">
+</head>
+
+<body class="bodyclass">
+  <!--Menu-->
+  <nav>
+    <ul class="menu_movil menu_drop">
+      <li>
+        <a href="#menu" class="size_icon"> <i class="fa fa-bars"></i> </a>
+        <ul>
+          <li class="col-3 col-s-3"><a href="indexJoanRibera.html">Home</a></li>
+          <li class="col-3 col-s-3"><a href="gallery.html">Gallery</a></li>
+          <li class="col-3 col-s-3"><a href="TierList.html">Tier List</a></li>
+          <li class="col-3 col-s-3"><a href="UsefulWebpages.html">Useful Info</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="menu_pc menu_drop">
+      <li class="col-3 col-s-3"><a href="indexJoanRibera.html">Home</a></li>
+      <li class="col-3 col-s-3"><a href="gallery.html">Gallery</a></li>
+      <li class="col-3 col-s-3"><a href="TierList.html">Tier List</a></li>
+      <li class="col-3 col-s-3"><a href="UsefulWebpages.html">Useful Info</a></li>
+    </ul>
+  </nav>
+  <!--End of Menu-->
+
+  <h1 id="c3">Tier List</h1>
+  <table>
+    <tr id="titles">
+      <th>Our Tier List</th>
+      <th>Web Name</th>
+      <th>Web Quality</th>
+    </tr>
+    <tr id="text1">
+      <td>1</td>
+      <td>PC Specialist</td>
+      <td>Great</td>
+    </tr>
+    <tr id="text2">
+      <td>2</td>
+      <td>PC Componentes</td>
+      <td>Good</td>
+    </tr>
+    <tr id="text3">
+      <td>3</td>
+      <td>NZXT</td>
+      <td>Nice</td>
+    </tr>
+        </table>
+
+        <h2> Questionnaire </h2>
+<p><b>Answer the following questions:</b></p>
+<p>1. When was the first commercially available microprocessor introduced?</p>
+<input type="text" name="microprocessor" id="q1">
+<br><br>
+<p>2. Which company introduced the first dedicated graphics processing unit (GPU)?</p>
+<input type="text" name="gpu" id="q2">
+<br><br>
+<p>3. What does CPU stand for?</p>
+<select id="q3">
+ <option name="cpu" value="empty"> </option>
+ <option name="cpu" value="Central Processing Unit">Central Processing Unit</option>
+ <option name="cpu" value="Computer Processing Unit">Computer Processing Unit</option>
+ <option name="cpu" value="Core Processing Unit">Core Processing Unit</option>
+ <option name="cpu" value="Central Power Unit">Central Power Unit</option>
+</select>
+<br><br>
+<p>4. Which architecture is commonly used in modern GPUs?</p>
+ <input type="radio" name="gpu_arch" value="CUDA" id="q41"> CUDA<br>
+ <input type="radio" name="gpu_arch" value="OpenCL" id="q42"> OpenCL<br>
+ <input type="radio" name="gpu_arch" value="Vulkan" id="q43"> Vulkan<br>
+ <input type="radio" name="gpu_arch" value="OpenGL" id="q44"> OpenGL<br>
+ <input type="radio" name="gpu_arch" value="DirectX" id="q45"> DirectX<br>
+<br><br>
+<p>5. Which component is responsible for managing and executing instructions in a CPU?</p>
+ <input type="checkbox" name="cpu_component" value="ALU" id="q51"> Arithmetic Logic Unit (ALU)<br>
+ <input type="checkbox" name="cpu_component" value="Control Unit" id="q52"> Control Unit<br>
+ <input type="checkbox" name="cpu_component" value="Cache" id="q53"> Cache<br>
+ <input type="checkbox" name="cpu_component" value="Registers" id="q54"> Registers<br>
+<br><br>
+<button onclick="check()">Check</button>
+<p id="mark"> </p>
+<p id="feedback"> </p>
+<script>
+function check(){
+  var q1 = document.getElementById("q1").value.toLowerCase();
+  var q2 = document.getElementById("q2").value.toLowerCase();
+  var q3 = document.getElementById("q3").value;
+  var q41 = document.getElementById("q41").checked;
+  var q42 = document.getElementById("q42").checked;
+  var q43 = document.getElementById("q43").checked;
+  var q44 = document.getElementById("q44").checked;
+  var q45 = document.getElementById("q45").checked;
+  var q51 = document.getElementById("q51").checked;
+  var q52 = document.getElementById("q52").checked;
+  var q53 = document.getElementById("q53").checked;
+  var q54 = document.getElementById("q54").checked;
+
+  var mark = 0;
+  var feedback = "Feedback: <br>";
+
+  // Question 1:
+  if (q1 === "1971") {
+    mark++;
+    feedback += "Question 1: Correct answer!<br>";
+  } else if (q1 === "") {
+    feedback += "Question 1: Please provide an answer.<br>";
+  } else {
+    feedback += "Question 1: Incorrect answer.<br>";
+  }
+
+  // Question 2:
+  if (q2 === "nvidia") {
+    mark++;
+    feedback += "Question 2: Correct answer!<br>";
+  } else if (q2 === "") {
+    feedback += "Question 2: Please provide an answer.<br>";
+  } else {
+    feedback += "Question 2: Incorrect answer.<br>";
+  }
+
+  // Question 3:
+  if (q3 === "Central Processing Unit") {
+    mark++;
+    feedback += "Question 3: Correct answer!<br>";
+  } else if (q3 === "empty") {
+    feedback += "Question 3: Please provide an answer.<br>";
+  } else {
+    feedback += "Question 3: Incorrect answer.<br>";
+  }
+
+  // Question 4:
+  if (q42) {
+    mark++;
+    feedback += "Question 4: Correct answer!<br>";
+  } else if (!q41 && !q42 && !q43 && !q44 && !q45) {
+    feedback += "Question 4: Please select an option.<br>";
+  } else {
+    feedback += "Question 4: Incorrect answer.<br>";
+  }
+
+  // Question 5:
+  if (q51 && q52 && q53 && q54) {
+    mark++;
+    feedback += "Question 5: Correct answer!<br>";
+  } else if (!q51 && !q52 && !q53 && !q54) {
+    feedback += "Question 5: Please select at least one option.<br>";
+  } else {
+    feedback += "Question 5: Incorrect answer.<br>";
+  }
+
+  document.getElementById("mark").innerHTML = "Final mark: " + mark;
+  document.getElementById("feedback").innerHTML = feedback;
+}
+</script>
+<a class="colortext" href="#c3">Go Up Again</a>
+        <footer class="grey col-12 col-s-12 iframe">
+          <p>Made by Joan Ribera Sirvent at IES Serpis</p>
+          <div class="container">
+            <div class="col-6 col-s-6">
+              <div class="col-12 col-s-12">
+                <iframe class="col-3 col-s-3" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.34010410308837896%2C39.471205939871076%2C-0.338280200958252%2C39.47598866639999&amp;layer=mapnik" style="border: 1px solid black"></iframe><br>
+                <a href="https://www.openstreetmap.org/#map=18/39.47360/-0.33919">See IES Serpis</a>
+              </div>
+            </div>
+            <aside class="col-6 col-s-6">
+              <img class="image" src="imagesJoan/footer.png" alt="footer image">
+            </aside>
+          </div>
+        </footer>
+        </body>
+        
+</html>

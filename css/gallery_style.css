@@ -1,0 +1,139 @@
+/*Made by Joan Ribera*/
+/*menu*/
+* {
+    box-sizing: border-box;
+    }
+    nav ul {
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    }
+    .size_icon{
+     font-size: 25px;
+    }
+    .menu_drop>li>a{
+     background-color: #333;
+     color: white;
+     padding: 10px;
+     display: block;
+     text-decoration: none;
+     min-width: 50px;
+     text-align:center;
+    }
+    /*Nested list*/
+    .menu_drop>li>ul>li>a{
+     background-color: #333;
+     color: white;
+     padding: 10px;
+     display: block;
+     text-decoration: none;
+     min-width: 100px;
+     text-align:center;
+    }
+    /*List and nested list*/
+    .menu_drop li>a:hover{
+     color: black;
+     background-color: lightgrey;
+    }
+    /*By default the nested list is hidden*/
+    .menu_drop>li>ul{
+     display: none;
+     position: absolute; /*the dropdown is over the content*/
+    }
+    /*When you (hovering) roll the cursor over the item, the drop-down-menu appears*/
+    .menu_drop>li:hover> ul {
+     display:flex;
+    }
+     .menu_pc {
+    display: none;
+     }
+  
+  
+  /*end of menu*/
+  .c3{color:aliceblue;}
+.row {
+  margin-bottom: 20px;
+}
+.grey{background-color:
+    lightslategray;
+    }
+.image {
+  width: 100%;
+  height: auto;
+}
+
+header, section, aside, footer, nav li{
+    padding: 1%;
+    
+    align-content: flex-end;
+    }
+    nav ul{margin:0;padding:0;
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;height: 100%;}
+    
+    .container{ display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    }  
+    .black{background-color:black;}
+ /*for mobile phones*/
+  
+ [class*="col-"]{
+    width: 
+    100%;  
+    .menu_movil {
+      display: none;
+       }
+       .menu_pc {
+      display: flex;
+       }
+      }
+ 
+  /* for Tablet */
+  @media (min-width: 400px) {
+    .col-md-6 {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+  
+    .col-md-6 {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  
+  
+  .menu_movil {
+    display: none;
+     }
+     .menu_pc {
+    display: flex;
+     }
+  }
+  /*for desktop*/
+  @media only screen and (min-width: 768px) {
+  
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
