@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+    <title>Index Joan Ribera Sirvent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Exam2">
+    <meta name="keywords" content="Exam2,Joan">
+    <meta name="author" content="Joan Ribera">
+    <link rel="stylesheet" href="css/W3.css">
+    <link rel="stylesheet" href="css/common_style.css">
+    <link rel="stylesheet" href="css/index_style.css">
+</head>
+
+<body class="bodyclass">
+    <header>
+        <!--Menu-->
+        <nav>
+            <ul class="menu_movil menu_drop">
+                <li><a href="#menu" class="size_icon"> <i class="fa fa-bars"></i> </a>
+                    <ul>
+                        <li class="col-3 col-s-3"><a href="indexJoanRibera.html">Home</a></li>
+                        <li class="col-3 col-s-3"><a href="gallery.html">Gallery</a></li>
+                        <li class="col-3 col-s-3"><a href="TierList.html">Tier List</a></li>
+                        <li class="col-3 col-s-3"><a href="UsefulWebpages.html">Useful Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="menu_pc menu_drop">
+                <li class="col-3 col-s-3"><a href="indexJoanRibera.html">Home</a></li>
+                <li class="col-3 col-s-3"><a href="gallery.html">Gallery</a></li>
+                <li class="col-3 col-s-3"><a href="TierList.html">Tier List</a></li>
+                <li class="col-3 col-s-3"><a href="UsefulWebpages.html">Useful Info</a></li>
+            </ul>
+        </nav>
+        <!--End of Menu-->
+    </header>
+
+    <!--Hello my name is Joan and this is made by me-->
+
+    <div id="c3" class="grey container col-12 col-s-12">
+        <img class="imagelogo" src="imagesJoan/logo.png" alt="logo">
+        <section class="white">
+            <header>
+                <h1 id="greytext">The Best CPUS and GPUs</h1>
+                <p class="colortext"><b>Made by Joan Ribera | </b>IES SERPIS</p>
+            </header>
+        </section>
+    </div>
+
+    <div class="black col-12 col-s-12">
+        <a href="gallery.html">
+            <h3 class="centertext col-12 col-s-12">Image Gallery</h3>
+        </a>
+        <img class="image col-3 col-s-3" src="imagesJoan/folderindex/1.jpg" alt="image 1">
+        <img class="image col-3 col-s-3" src="imagesJoan/folderindex/2.jpg" alt="image 2">
+        <img class="image col-2 col-s-2" src="imagesJoan/folderindex/3.jpg" alt="image 3">
+        <img class="image col-3 col-s-3" src="imagesJoan/folderindex/4.jpg" alt="image 4">
+
+    </div>
+    <div class="container colortext col-12 col-s-12">
+        <h2 class="centertext colortext col-12 col-s-12">Common Questions</h2>
+    </div>
+    
+    <div class="container">
+        <div class="col-6 col-s-6">
+            <div class="colortext col-12 col-s-12">
+                <dl>
+                    <dt><b>What does it mean building a PC?</b></dt>
+                    <dd>It means to take different components and make your own PC with the specs that you want</dd>
+                    <dt><b>What is a component?</b></dt>
+                    <dd>Hardware.</dd>
+                </dl>
+            </div>
+        </div>
+        
+        <aside class="white col-6 col-s-6">
+            <dl>
+                <dt><b>What is a PC?</b></dt>
+                <dd>A Personal Computer.</dd>
+            
+                <dt><b>What is a webpage?</b></dt>
+                <dd>A website that contains data.</dd>
+                
+                <dt><b>What is a mouse?</b></dt>
+                <dd>An external device used for scrolling</dd>
+            </dl>
+        </aside>
+    </div>
+    <a href="page1.html"><h3>Useful webpages to help you build your own custom PC</h3></a>
+
+    <div class="col-12 col-s-12 container colortext">
+        <h4 id="c4">PC Examples:</h4>
+        <ol class="list2">
+            <li class="col-12 col-s-12">Windows</li>
+            <li class="col-6 col-s-6">Mac</li>
+            <li class="col-6 col-s-6">Linux</li>
+        </ol>
+    </div>
+    
+    <main class="table">
+        <p>
+            To build your custom PC, you need to know how to arrange the different components of a PC almost from scratch. You will also need the said components, but it can save you a lot of money because you are not paying for the building process done by others.
+        </p>
+    </main>
+    
+    <a href="page2.html"><h3>See our table</h3></a>
+    
+    <h4>Contact Us:</h4>
+    <form class="col-12 col-s-12" id="contactForm">
+           <ul>
+               <li>
+                   <label>Full Name: <span>*</span></label>
+                   <input type="text" name="field1" placeholder="First" required> 
+                   <input type="text" name="field2" placeholder="Last">
+               </li>
+               <li>
+                   <label>E-mail: <span>*</span></label>
+                   <input type="email" name="field3" placeholder="fulanito@serpis.com" required>
+               </li>
+               <li>
+                   <label>Subject:</label>
+                   <select name="field4">
+                       <option value="Advertise">Advertise</option>
+                       <option value="Partnership">Partnership</option>
+                       <option value="General Question">General</option>
+                   </select>
+               </li>
+               <li>
+                   <label>Your Message to Us <span>*</span></label>
+                   <textarea name="field5" id="field5"></textarea>
+               </li>
+               <li>
+                   <input type="submit" value="Submit">
+               </li>
+           </ul>
+       </form>
+
+       <script>
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault(); // Prevent form submission
+            
+            var form = e.target;
+            var inputs = form.getElementsByTagName("input");
+            var select = form.getElementsByTagName("select")[0];
+            var textarea = form.getElementsByTagName("textarea")[0];
+            
+            var mark = 0;
+            var feedback = "Feedback:<br>";
+            
+         
+            if (inputs[0].value.trim() !== "" && inputs[1].value.trim() !== "") {
+                mark += 2;
+                feedback += "Full Name: Correct<br>";
+            } else {
+                feedback += "Full Name: Incorrect<br>";
+            }
+            
+          
+            if (inputs[2].value.trim() !== "") {
+                mark += 2;
+                feedback += "E-mail: Correct<br>";
+            } else {
+                feedback += "E-mail: Incorrect<br>";
+            }
+            
+         
+            if (select.value !== "") {
+                mark += 2;
+                feedback += "Subject: Correct<br>";
+            } else {
+                feedback += "Subject: Incorrect<br>";
+            }
+            
+
+            if (textarea.value.trim() !== "") {
+                mark += 2;
+                feedback += "Message: Correct<br>";
+            } else {
+                feedback += "Message: Incorrect<br>";
+            }
+            
+            document.getElementById("mark").innerHTML = "Final mark: " + mark;
+            document.getElementById("feedback").innerHTML = feedback;
+        });
+        </script>
+        <p id="mark"></p>
+        <p id="feedback"></p>
+ <!--End of Form-->
+ <a class="colortext" href="#c3">Go Up Again</a>
+    <footer class="grey col-12 col-s-12 iframe"> <p> Made by Joan Ribera Sirvent at IES Serpis</p>
+   
+    
+
+        <div class="container">      
+            <div class="col-6 col-s-6">
+                 <div class= "col-12 col-s-12" >
+                <div>
+                    <iframe class="col-3 col-s-3" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.34010410308837896%2C39.471205939871076%2C-0.338280200958252%2C39.47598866639999&amp;layer=mapnik" style="border: 1px solid black">
+                    </iframe><br>
+                        <a href="https://www.openstreetmap.org/#map=18/39.47360/-0.33919">
+                            See IES Serpis</a>
+                     </div>
+                    </div>
+            </div>
+                
+            <aside class="col-6 col-s-6">
+                <img class="image"
+        src="imagesJoan/footer.png" alt="footer image">
+            </aside></div>
+        
+    </footer>
+    </html>
